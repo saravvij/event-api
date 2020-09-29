@@ -1,0 +1,46 @@
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+    "name": "Winter Event3",
+    "store": "GAPP",
+    "items": [
+        {
+            "itemId": 100,
+            "name": "T Shirt"
+        },
+        {
+            "itemId": 102,
+            "name": "Pants"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/events
+
+###
+GET http://localhost:3000/events/5f72e10383a02756fa19a011
+
+### 
+DELETE http://localhost:3000/events/5f72e12910e3b4570ee3b375
+
+
+###
+PATCH http://localhost:3000/events/5f72e10383a02756fa19a011
+Content-Type: application/json
+
+{
+    "name": "Winter Event12344",
+    "store": "GAPP",
+    "items": [
+        {
+            "itemId": 100,
+            "name": "T Shirt"
+        },
+        {
+            "itemId": 102,
+            "name": "Pants"
+        }
+    ]
+}
